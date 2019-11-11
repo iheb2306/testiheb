@@ -1,0 +1,18 @@
+<h1>{{titre}}</h1>
+<h1>{{dateJour | uppercase}}</h1>
+
+
+    <li *ngFor="let t of films">{{t.titre}} <br>
+       {{t.affiche}}  durée : {{t.duree}} minutes
+       <select>
+           <option *ngFor="let t of liste">{{t}}</option>
+       </select>
+    </li>
+    <p>Donner la durée minimale du film<input type="number" value="">
+
+    il y a  films ayant uns durée >100 min</p>
+
+
+
+
+
